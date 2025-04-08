@@ -1,0 +1,8 @@
+.weather-details-sunrise-sunset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: auto;
+
+  gap: 2em;
+}

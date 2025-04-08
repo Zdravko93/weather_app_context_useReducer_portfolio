@@ -1,0 +1,51 @@
+.suggestions-list {
+  list-style: none;
+  padding: 1em;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 6px 6px rgba(255, 255, 255, 0.3);
+  outline: 1px solid orange;
+  width: 600px;
+  margin-inline: auto;
+  position: absolute;
+  top: 2em;
+  left: 0em;
+  cursor: pointer;
+  z-index: 100;
+  background: black;
+}
+
+.suggestions-list li {
+  padding: 0.3em;
+  color: #fff;
+  transition: all 200ms ease;
+}
+
+.suggestions-list li:hover {
+  /* background: limegreen; */
+  color: orange !important;
+}
+
+.suggestions-list-details-header {
+  width: 300px;
+}
+
+[data-theme="light"] .suggestions-list {
+  background: black;
+  z-index: 11000;
+}
+
+[data-theme] .suggestions-list li {
+  color: #fff;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 850px) {
+  .suggestions-list {
+    max-width: 400px;
+  }
+
+  .suggestions-list li {
+    padding: 0.1em;
+  }
+}

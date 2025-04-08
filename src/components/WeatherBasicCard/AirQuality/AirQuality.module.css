@@ -1,0 +1,70 @@
+.air-quality {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+}
+
+.air-quality-header {
+  font-weight: 800;
+}
+
+.air-quality-index {
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.4);
+  background: orange;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+.air-quality-description {
+  padding-bottom: 2em;
+  font-size: 0.9rem;
+  font-weight: 300;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 1);
+  text-align: center;
+  line-height: 1.4;
+}
+
+.air-quality-index.top {
+  box-shadow: 0 0 6px 6px limegreen;
+  outline: 1px solid white;
+}
+
+.air-quality-index.fair {
+  box-shadow: 0 0 6px 6px green;
+}
+
+.air-quality-index.moderate {
+  box-shadow: 0 0 6px 6px orange;
+}
+
+.air-quality-index.poor {
+  box-shadow: 0 0 6px 6px purple;
+}
+
+.air-quality-index.very-poor {
+  box-shadow: 0 0 6px 6px red;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 850px) {
+  .air-quality-header {
+    font-size: 1rem;
+  }
+
+  .air-quality-index {
+    width: 25px;
+    height: 25px;
+  }
+
+  .air-quality-description {
+    font-size: 0.75rem;
+  }
+}

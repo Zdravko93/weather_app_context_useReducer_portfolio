@@ -1,0 +1,22 @@
+.humidity-description {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.humidity-description img {
+  width: 30px;
+  height: 30px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 500px) {
+  .humidity-text {
+    font-size: 0.8rem;
+  }
+
+  .humidity-description img {
+    width: 25px;
+    height: 25px;
+  }
+}

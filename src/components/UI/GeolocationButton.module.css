@@ -1,0 +1,55 @@
+.geolocation-btn-wrapper {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.geolocation-btn {
+  border: none;
+  outline: none;
+  padding: 1em;
+  background: orange;
+  color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  transition: box-shadow 250ms ease, background 250ms ease, color 250ms;
+}
+
+.geolocation-btn:hover {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8);
+  background: #000;
+  color: orange;
+}
+
+.geolocation-btn:focus {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8);
+  background: #000;
+  color: orange;
+}
+
+/* LIGHT THEME */
+[data-theme="light"] .geolocation-btn {
+  background: #000;
+  color: orange;
+}
+
+[data-theme="light"] .geolocation-btn:hover {
+  color: #fff;
+}
+
+[data-theme="light"] .geolocation-btn:focus {
+  transform: scale(1.02);
+  color: white;
+  outline: 1px solid orange;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 850px) {
+  .geolocation-btn {
+    padding: 0.8em;
+    font-size: 0.8rem;
+  }
+}

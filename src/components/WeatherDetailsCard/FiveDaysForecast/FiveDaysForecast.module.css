@@ -1,0 +1,22 @@
+.weather-details-forecast {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.weather-details-forecast ul {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.4em;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 850px) {
+  .weather-details-forecast ul {
+    justify-content: center;
+  }
+}

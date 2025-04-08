@@ -1,0 +1,6 @@
+.visibility {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  flex: 1;
+}

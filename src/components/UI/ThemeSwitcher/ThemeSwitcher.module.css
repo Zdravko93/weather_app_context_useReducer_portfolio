@@ -1,0 +1,63 @@
+.theme-switcher-btn {
+  padding: 0;
+  border: none;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 8px 4px rgba(255, 255, 255, 0.6);
+  background: #fff;
+  cursor: pointer;
+  z-index: 1;
+  position: absolute;
+  right: 1em;
+  transition: all 100ms ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-switcher-btn:hover {
+  transform: scale(1.01);
+}
+
+.theme-switcher-btn:focus-visible {
+  transform: scale(1.2);
+  outline: 1px solid black;
+}
+
+.theme-switcher-btn:active {
+  box-shadow: 1px 1px 8px 4px rgba(255, 255, 255, 0.9);
+}
+
+.theme-switcher-btn img {
+  background: orange;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* WEATHER DETAILS CARD TOGGLE THEME BUTTON POSITION */
+.theme-switcher-btn.weather-details {
+  box-shadow: 1px 1px 8px 4px rgba(255, 255, 255, 0.6);
+  top: 5em;
+  right: 1.8em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* LIGHT THEME STYLES */
+[data-theme="light"] .theme-switcher-btn:active {
+  box-shadow: 1px 1px 8px 4px rgba(0, 0, 0, 1);
+}
+
+@media (max-width: 850px) {
+  .theme-switcher-btn,
+  .theme-switcher-btn img {
+    width: 35px;
+    height: 35px;
+  }
+}

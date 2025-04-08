@@ -1,0 +1,122 @@
+.search-wrapper {
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  position: relative;
+}
+
+.search-wrapper button {
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.search {
+  font-family: "Montserrat", sans-serif;
+  padding: 0.8em 0em 0.8em 3em;
+  width: 100%;
+  border: none;
+  border-radius: 20vw;
+  font-size: 1em;
+  font-weight: 500;
+  position: relative;
+  box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.5);
+}
+
+.search:focus-visible {
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+  /* outline: 3px solid grey; */
+}
+
+.search::placeholder {
+  opacity: 0.8;
+}
+
+.search-icon {
+  padding: 1px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%) !important;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0.7;
+  transition: opacity 200ms ease, background 200ms ease;
+}
+
+.search-wrapper button:hover .search-icon {
+  opacity: 1;
+}
+
+.search-wrapper button:active .search-icon {
+  transform: translateY(-50%) scale(1.5) !important;
+}
+
+/* WEATHER DETAILS CARD input styles */
+.weather-details-search-wrapper {
+  width: 300px;
+}
+
+/* LIGHT THEME */
+[data-theme] .search {
+  background: #000;
+  color: orange;
+}
+
+[data-theme] .search:focus {
+  outline: 3px solid rgba(0, 0, 0, 0.5);
+}
+
+[data-theme] .search::placeholder {
+  color: white;
+  opacity: 0.4;
+}
+
+[data-theme="light"] .weather-details-search-wrapper .search {
+  border: none;
+  background: #fff;
+  color: #000;
+}
+
+[data-theme="light"] .search-icon {
+  background: white;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+[data-theme="light"] .search-icon:hover {
+  background: orange;
+}
+
+/* MEDIA QUERIES  */
+@media (max-width: 850px) {
+  .search-wrapper {
+    max-width: 400px;
+  }
+
+  .search {
+    padding: 0.7em 0em 0.7em 3em;
+    font-size: 0.8em;
+  }
+
+  .search-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 700px) {
+  .weather-details-search-wrapper {
+    margin-top: 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-wrapper {
+    max-width: 250px;
+  }
+}

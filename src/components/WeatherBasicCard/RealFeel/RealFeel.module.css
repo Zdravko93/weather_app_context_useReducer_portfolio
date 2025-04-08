@@ -1,0 +1,26 @@
+.real-feel {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  z-index: 1;
+}
+
+h4 {
+  font-weight: 200;
+  font-size: 0.7rem;
+}
+
+span {
+  font-size: 0.7rem;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 850px) {
+  h4 {
+    font-size: 0.6rem;
+  }
+
+  span {
+    font-size: 0.6rem;
+  }
+}

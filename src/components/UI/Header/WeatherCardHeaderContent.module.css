@@ -1,0 +1,24 @@
+.header-flex-group {
+  padding: 1rem;
+  display: flex;
+  gap: 1.5em;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.header-flex-group img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  outline: 3px solid orange;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.header-flex-group h1 {
+  padding-block: 1em;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-decoration: overline solid 3px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}

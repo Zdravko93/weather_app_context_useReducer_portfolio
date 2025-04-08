@@ -1,0 +1,105 @@
+.favorite-cities-wrapper {
+  margin-bottom: 3em;
+  text-align: center;
+}
+
+.favorite-cities-wrapper h3 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.favorite-cities-wrapper ul {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8em;
+}
+
+.favorite-cities-wrapper ul li {
+  color: orange;
+
+  display: flex;
+  align-items: center;
+}
+
+.favorite-cities-wrapper img {
+  margin-right: 0.35em;
+  width: 15px;
+  height: 15px;
+}
+
+.favorite-cities-wrapper button {
+  margin-left: 1em;
+  padding: 0.8em 1em;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  background: orange;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5);
+  transition: all 250ms ease;
+}
+
+.favorite-cities-wrapper button:hover {
+  background: #000;
+  color: orange;
+}
+
+.favorite-cities-wrapper button:focus {
+  transform: scale(1.05);
+  background: #000;
+  color: orange;
+}
+
+.no-favorite-cities {
+  color: yellow;
+  margin: 0;
+}
+
+/* LIGHT THEME */
+[data-theme] .favorite-cities-wrapper h3 {
+  color: #333;
+}
+
+[data-theme="light"] .no-favorite-cities {
+  color: green;
+}
+
+[data-theme="light"] .favorite-cities-wrapper button {
+  background: #000;
+  color: orange;
+}
+
+[data-theme="light"] .favorite-cities-wrapper button:hover {
+  color: #fff;
+}
+
+[data-theme="light"] .favorite-cities-wrapper button:focus {
+  color: white;
+  outline: 1px solid orange;
+}
+
+[data-theme="light"] .favorite-cities-wrapper ul li {
+  color: #000;
+}
+
+/* MEDIA QUERIES  */
+@media (max-width: 850px) {
+  .favorite-cities-wrapper h3 {
+    font-size: 1rem;
+  }
+
+  .favorite-cities-wrapper button {
+    padding: 0.8em;
+    font-size: 0.8rem;
+  }
+
+  .favorite-cities-wrapper ul li {
+    font-size: 0.9rem;
+  }
+}

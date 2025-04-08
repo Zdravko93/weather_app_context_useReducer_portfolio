@@ -1,0 +1,13 @@
+.weather-details-wind {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.orientation-unit-toggle-group {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  justify-content: space-between;
+  gap: 2em;
+}

@@ -1,0 +1,103 @@
+.details-arrow-btn {
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent;
+
+  transition: transform 200ms ease, opacity 700ms ease, visibility 0ms ease;
+  opacity: 0;
+  visibility: hidden;
+
+  position: relative;
+
+  flex-shrink: 0;
+  z-index: 1000000;
+}
+
+.details-arrow-btn:hover .details-arrow {
+  box-shadow: 1px 1px 5px 2px rgba(255, 255, 255, 0.7);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.details-arrow-btn:focus-visible {
+  outline: 4px solid orange;
+}
+
+.details-arrow-btn:active {
+  transform: translateX(10px);
+}
+
+.details-arrow-btn .details-arrow.weather-details-arrow:active {
+  transform: translateX(-20px);
+}
+
+.details-arrow-btn.fade-in {
+  opacity: 1;
+  visibility: visible;
+}
+
+.details-arrow {
+  border-radius: 50%;
+  color: white;
+  stroke-width: 1.9;
+  transition: transform 200ms ease;
+}
+
+.tooltip {
+  position: absolute;
+  color: wheat;
+  bottom: 5em;
+  font-size: 0.7rem;
+  line-height: 1.2;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms ease, visibility 0ms ease;
+}
+
+.details-arrow-btn:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* LIGHT THEME */
+[data-theme="light"] .details-arrow-btn {
+  background: green;
+}
+
+[data-theme="light"] .tooltip {
+  color: green;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 850px) {
+  .details-arrow-btn {
+    width: 45px;
+    height: 45px;
+  }
+
+  .weather-details-card-btn {
+    position: relative;
+    right: -4em;
+    /* bottom: -70em;            */
+    background: orange;
+  }
+
+  .weather-details-card-btn .tooltip {
+    color: rgb(12, 151, 59);
+  }
+}
+
+@media (max-width: 850px) {
+  .details-arrow-btn {
+    width: 40px;
+    height: 40px;
+  }
+}

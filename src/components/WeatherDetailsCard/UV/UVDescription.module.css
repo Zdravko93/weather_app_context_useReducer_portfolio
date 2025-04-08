@@ -1,0 +1,34 @@
+.uv-description {
+  font-size: 0.8rem;
+}
+
+.uv-low {
+  color: #00b300;
+}
+
+.uv-moderate {
+  color: #ff8c00;
+}
+
+.uv-high {
+  color: #ff9900;
+}
+
+.uv-very-high {
+  color: #ff3300;
+}
+
+.uv-extreme {
+  color: #9900cc;
+}
+
+.uv-dangerous {
+  color: #6a1b9a;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 500px) {
+  .uv-description {
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,26 @@
+.visibility-description {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.visibility-description img {
+  width: 30px;
+  height: 30px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 500px) {
+  .visibility-description {
+    margin-top: auto;
+  }
+
+  .visibility-description p {
+    font-size: 0.8rem;
+  }
+
+  .visibility-description img {
+    width: 25px;
+    height: 25px;
+  }
+}

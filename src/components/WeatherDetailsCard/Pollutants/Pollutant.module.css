@@ -1,0 +1,13 @@
+.pollutant-value {
+  margin-left: 0.3em;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: blue;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 500px) {
+  .pollutant-value {
+    font-size: 0.7rem;
+  }
+}

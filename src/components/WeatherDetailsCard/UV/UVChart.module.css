@@ -1,0 +1,85 @@
+.meter {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle-background {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+  border: 10px solid #ddd;
+}
+
+.circle-bar {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  clip: rect(0px, 200px, 200px, 100px);
+  transform-origin: center;
+  transition: transform 500ms ease;
+  background: linear-gradient(to right, #00b300, #ff9900, #ff3300);
+}
+
+.center-text {
+  position: absolute;
+  font-size: 1.25rem;
+  color: purple;
+}
+
+.center-text span:first-child {
+  font-size: 1rem;
+}
+
+.center-text span:nth-child(2) {
+  color: red;
+}
+
+.circle-bar-low {
+  background: linear-gradient(to right, #00b300, #ff3300);
+}
+
+.circle-bar-moderate {
+  background: linear-gradient(to right, #ffdd00, #ff3300);
+}
+
+.circle-bar-high {
+  background: linear-gradient(to right, #ff9900, #ff3300);
+}
+.circle-bar-very-high {
+  background: linear-gradient(to right, #ff3300, #ff3300);
+}
+
+.circle-bar-extreme {
+  background: linear-gradient(to right, #9900cc, #ff3300);
+}
+
+/* RESSET TRANSFORM / ROTATION FOR THE NEXT COMPONENT RENDER CYCLE*/
+.circle-bar-rotate {
+  transform: rotate(var(--rotation), 0deg);
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 850px) {
+  .meter {
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .meter {
+    width: 110px;
+    height: 110px;
+  }
+  .circle-background {
+    width: 90px;
+    height: 90px;
+  }
+}
