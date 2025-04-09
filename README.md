@@ -1,4 +1,4 @@
-# Weather App - Solution by [Zdravko]
+# Weather App - Solution by Zdravko
 
 This is a weather application built with React to showcase my skills and growth in front-end development. The app allows users to check current weather conditions for any location globally, providing weather data and interactive features. This project's goal was to demonstrate my ability to integrate various technologies, work with APIs, and create a user-friendly, visually appealing app. Also, the project will be included in my portfolio website in progress.
 
@@ -38,8 +38,8 @@ The idea this project was to build a weather app using external API(OpenWeather 
 
 ### Screenshot
 
-![Weather App Dark Theme](../docs/screenshot-dark-theme.png)
-![Weather App Light Theme](../docs//screenshot-light-theme.png)
+![Weather App Dark Theme](./screenshot-dark-theme.png)
+![Weather App Light Theme](./screenshot-light-theme.png)
 
 ### Links
 
@@ -97,11 +97,22 @@ In this project, I used the 'useReducer' hook to manage state in components wher
    ```bash
    cd weather_app_context_useReducer_portfolio
    ```
-3. Open the project in your browser: You can open the index.html file directly in your web browser by double-clicking on it or using a local server if you prefer.
+3. Install the necessary dependencies
 
-4. Optional: Install a local server (if needed): If you want to run this project with a local server, you can use tools like Live Server in VS Code or any other HTTP server. Once the server is running, open your browser and go to http://localhost:3000 (or the corresponding port).
+   ```bash
+    npm install
+   ```
 
-5. Start contributing or experimenting: Now you can make changes to the code, experiment with new features, or contribute to the project.
+4. Start the development server
+
+   ```bash
+   npm start
+   ```
+
+   This will launch the application in development mode. By default, it will be available in your browser at http://localhost:3000. The page will automatically reload if you make edits.
+
+5. Start contributing or experimenting:
+   Now that the project is up and running, you can start making changes to the code. You can experiment with adding new features, modifying existing components, or improving the app. Any changes you make will be reflected live in your browser, thanks to the development server.
 
 ## Author
 
