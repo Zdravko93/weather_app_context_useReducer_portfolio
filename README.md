@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+
 # Weather App - Solution by Zdravko
+
 =======
+
 # Weather App - Context API, useReducer
->>>>>>> d7ea1d4ba2d4f85890ea6abbf6107ed5d48492d1
+
+> > > > > > > d7ea1d4ba2d4f85890ea6abbf6107ed5d48492d1
 
 This is a weather application built with React to showcase my skills and growth in front-end development. The app allows users to check current weather conditions for any location globally, providing weather data and interactive features. This project's goal was to demonstrate my ability to integrate various technologies, work with APIs, and create a user-friendly, visually appealing app. Also, the project will be included in my portfolio website in progress.
 
@@ -44,6 +48,8 @@ The idea this project was to build a weather app using external API(OpenWeather 
 
 ![Weather App Dark Theme](./screenshot-dark-theme.png)
 ![Weather App Light Theme](./screenshot-light-theme.png)
+![Weather App Basic Card Dark Theme](./screenshot-basic-weather-dark-theme.png)
+![Weather App Basic Card Light Theme](./screenshot-basic-weather-light-theme.png)
 
 ### Links
 
