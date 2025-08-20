@@ -22,7 +22,7 @@ This is a weather application built with React to showcase my skills and growth 
 
 ### The challenge
 
-The idea this project was to build a weather app using external API(OpenWeather API) that allows users to:
+The idea for this project was to build a weather app using external API(OpenWeather API) that allows users to:
 
 - Search for the current weather of any city or location in the world through an external weather API
 - View details like temperature, air quality, humidity, wind speed, and weather conditions (e.g., clear, cloudy, rainy).
